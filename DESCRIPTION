@@ -9,6 +9,7 @@ Description: OpenCPU application to chart github statistics.
 License: GPL
 Imports:
     ggplot2,
+    shiny,
     httr,
     RJSONIO,
     reshape2
