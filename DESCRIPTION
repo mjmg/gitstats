@@ -10,6 +10,7 @@ License: GPL
 Imports:
     ggplot2,
     plotly,
+    htmlwidgets,
     httr,
     RJSONIO,
     reshape2
