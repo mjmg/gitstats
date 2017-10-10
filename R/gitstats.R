@@ -6,7 +6,7 @@
 #' @param type either "users" or "orgs"
 #' @param max maximum number of repositories to plot
 #' @author Scott Chamberlain, Jeroen Ooms
-#' @import ggplot2 httr jsonlite reshape2
+#' @import ggplot2 httr jsonlite reshape2 plotly
 #' @export
 gitstats <- function (id = "hadley", type = c("users", "orgs"), max=20) {
 	type <- match.arg(type, choices=c('users','orgs'))
@@ -35,6 +35,6 @@ gitstats <- function (id = "hadley", type = c("users", "orgs"), max=20) {
     xlab("") + ylab("")
 	
 	#don't return anything
-	print(myplot)  
+	print(ggplotly(myplot))  
 	invisible();
 }
