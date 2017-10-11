@@ -6,7 +6,7 @@
 #' @param type either "users" or "orgs"
 #' @param max maximum number of repositories to plot
 #' @author Scott Chamberlain, Jeroen Ooms
-#' @import ggplot2 httr jsonlite reshape2 plotly htmlwidgets
+#' @import ggplot2 httr jsonlite reshape2 plotly tools scales httr jsonlite magrittr digest viridisLite base64enc htmltools htmlwidgets tidyr hexbin RColorBrewer dplyr tibble lazyeval crosstalk purrr data.table
 #' @export
 gitstats <- function (id = "hadley", type = c("users", "orgs"), max=20) {
 	type <- match.arg(type, choices=c('users','orgs'))
