@@ -35,8 +35,8 @@ gitstats <- function (id = "hadley", type = c("users", "orgs"), max=20) {
     xlab("") + ylab("")
 	
 	#don't return anything
-	#print(myplot)
-	m <- ggplotly(myplot)
-	htmlwidgets::saveWidget(m, "mymap.html", selfcontained = FALSE)
+	print(myplot)
+	#m <- ggplotly(myplot)
+	#htmlwidgets::saveWidget(m, "mymap.html", selfcontained = FALSE)
 	invisible();
 }
