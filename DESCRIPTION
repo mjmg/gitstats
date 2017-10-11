@@ -10,7 +10,10 @@ License: GPL
 Imports:
     ggplot2,
     plotly,
-    htmlwidgets,
+    tools, scales, httr, jsonlite, magrittr, digest, viridisLite,
+        base64enc, htmltools, htmlwidgets (>= 0.9), tidyr, hexbin,
+        RColorBrewer, dplyr, tibble, lazyeval (>= 0.2.0), crosstalk,
+        purrr, data.table,
     httr,
     RJSONIO,
     reshape2
